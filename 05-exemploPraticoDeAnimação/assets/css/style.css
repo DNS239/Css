@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #eeb78a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    color: #0e0802;
+    background: linear-gradient(90deg, #d53369, #daee51);
+    box-shadow: 8px 12px 7px #9b7c5a;
+    animation: fade 2.2s infinite linear;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+    background: linear-gradient(90deg, #e4a25c, #a1f93c);
+    box-shadow: 12px 18px 12px #946f47;
+}
+
+@keyframes fade{
+    0%{
+        transform: rotate(0);
+    }
+    15%{
+        transform: rotate(-15deg);
+    }
+    20%{
+        transform: rotate(10deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    40%, 100%{
+        transform: rotate(0);
+    }
+}
