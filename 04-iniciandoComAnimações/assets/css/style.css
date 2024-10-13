@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: teal;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    perspective: 300px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    position: absolute;
+    background: salmon;
+
+    color: #00e1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    /* transition: background 1s linear, transform 1.5s ease-in-out 1s; */
+
+
+    /* animation-name: exemplo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    animation: exemplo 2s linear 2s infinite alternate;
+
+    /*animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    
+    */
+
+}
+
+
+.box:hover {
+    animation-play-state: paused;
+    /* transform: rotateY(180deg); */
+}
+
+
+@keyframes exemplo {
+    0% {
+        background: green;
+
+    }
+
+    50% {
+        background: yellow;
+
+    }
+
+    100% {
+        background: red;
+
+    }
+}
