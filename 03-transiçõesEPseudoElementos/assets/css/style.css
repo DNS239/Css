@@ -1,0 +1,45 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px lightgray;
+}
+
+.list li {
+    list-style: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 12px 32px;
+    margin-bottom: 4px;
+    transition: background 1s;
+}
+
+.list li:hover {
+    background-color: #b02151;
+    
+}
+
+.list input {
+    accent-color: #daae51;
+}
+
+.list input:checked + span {
+    text-decoration: line-through;
+}
+
+.list li:has(input:checked) {
+    background-color: #f0ab1a;
+    color: #d53369;
+    border-radius: 4px;
+}
