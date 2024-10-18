@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #222;
+    perspective: 300px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.box {
+    position: absolute;
+    background: linear-gradient(90deg, #b0f002, #07e0e7);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; */
+
+    animation: exemple 5s infinite alternate;
+    filter: blur(100px);
+
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 3rem;
+}
+
+@keyframes exemple {
+    0% {
+        transform: rotateY(30deg) rotate(-25deg) translateZ(100px);
+        background: linear-gradient(90deg, #4df002, #e7079c);
+    }
+
+    25% {
+        transform: rotateY(-30deg) translateZ(100px);
+        background: linear-gradient(90deg, #02ff0f, #ff3d02);
+    }
+
+    50% {
+        transform: rotateX(-50deg) translateZ(-100);
+        background: linear-gradient(90deg, #b0f002, #002fff);
+    }
+
+    75% {
+        transform: rotateX(-50deg) translateZ(-100px);
+        background: linear-gradient(90deg, #faf601, #d400ff);
+    }
+
+    100% {
+        transform: rotateX(20deg) translateZ(0);
+    }
+}
